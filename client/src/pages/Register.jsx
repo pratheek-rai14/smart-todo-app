@@ -13,15 +13,24 @@ const Register = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
 
+    try {
     await registerUser({
       name,
       email,
       password,
     });
 
+    alert("Registration Successful");
     navigate("/login");
+    } catch (error) {
+      alert(
+        error.response?.data?.message ||
+        "Registration Failed"
+      );
+    }
   };
 
+  
   return (
     <div className="auth-container">
       <form className="auth-form" onSubmit={handleSubmit}>
