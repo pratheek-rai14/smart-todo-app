@@ -1,10 +1,10 @@
 import axios from "axios";
 
-export default axios.create({
+const API = axios.create({
   baseURL: import.meta.env.VITE_API_URL,
 });
 
-// Add token authomatically to every request 
+// Add token automatically to every request
 API.interceptors.request.use((req) => {
   const userInfo = JSON.parse(
     localStorage.getItem("userInfo")
@@ -18,4 +18,3 @@ API.interceptors.request.use((req) => {
 });
 
 export default API;
-
