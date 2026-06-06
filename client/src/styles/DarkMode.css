@@ -1,0 +1,15 @@
+.dark-mode {
+  background-color: #0f172a;
+  color: white;
+}
+
+.dark-mode .todo-item {
+  background-color: #1e293b;
+  color: white;
+}
+
+.dark-mode input {
+  background-color: #1e293b;
+  color: white;
+  border: 1px solid #334155;
+}

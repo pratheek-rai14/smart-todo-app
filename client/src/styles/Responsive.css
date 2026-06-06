@@ -1,0 +1,132 @@
+/* =========================
+   MOBILE
+========================= */
+@media screen and (max-width: 768px) {
+
+  .dashboard-container {
+    width: 100%;
+    padding: 15px;
+    margin: 0;
+    box-sizing: border-box;
+  }
+
+  /* Navbar */
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .nav-actions {
+    width: 100%;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .nav-actions button {
+    width: 100%;
+  }
+
+  /* Search & Filter */
+  .search-input,
+  .filter-select {
+    width: 100%;
+  }
+
+  /* Stats */
+  .stats-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+
+  .stat-card {
+    width: 100%;
+  }
+
+  /* =====================
+     Todo Form
+  ===================== */
+ @media screen and (max-width: 768px) {
+
+  .todo-form {
+    display: grid !important;
+
+    grid-template-columns:
+      2fr
+      1fr
+      1fr
+      1fr !important;
+
+    gap: 6px;
+
+    width: 100%;
+  }
+
+  .todo-form input,
+  .todo-form select,
+  .todo-form button {
+    width: 100%;
+    min-width: 0;
+
+    height: 50px !important;
+
+    padding: 8px !important;
+
+    font-size: 12px !important;
+  }
+
+  .todo-form button {
+    white-space: nowrap;
+  }
+}
+
+  /* Todo Card */
+  .todo-item {
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  /* =====================
+     Action Buttons
+  ===================== */
+  .todo-buttons {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    gap: 6px;
+  }
+
+  .todo-buttons button {
+    flex: 1;
+    min-width: 0;
+    padding: 8px 6px;
+    font-size: 12px;
+    font-weight: 600;
+    border-radius: 8px;
+    white-space: nowrap;
+  }
+}
+
+/* =========================
+   EXTRA SMALL MOBILE
+========================= */
+@media screen and (max-width: 480px) {
+
+  .todo-form {
+    grid-template-columns:
+      2fr
+      1fr
+      1fr
+      1fr !important;
+
+    gap: 4px;
+  }
+
+  .todo-form input,
+  .todo-form select,
+  .todo-form button {
+    height: 45px !important;
+    padding: 6px !important;
+    font-size: 11px !important;
+  }
+}
